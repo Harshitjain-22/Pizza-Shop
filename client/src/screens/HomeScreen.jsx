@@ -3,7 +3,7 @@ import React from 'react';
 import {Container} from "react-router-bootstrap";
 // import Pizza from "../components/Pizza";
 
-const HomeScreen = () => {
+const HomeScreen =  () => {
 
       return (
     <>

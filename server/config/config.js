@@ -8,7 +8,7 @@ const connectDB = async () => {
         const conn = await mongoose.connect(url, {
             useUnifiedTopology: true,
             useNewUrlParser: true,
-            serverApi: ServerApiVersion.v1
+            // serverApi: ServerApiVersion.v1
             // useCreateIndex: true
         });
         console.log(`Connected to database ${conn.connection.host}`);
