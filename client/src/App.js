@@ -27,7 +27,7 @@ function App() {
         <Route path="/about" component={About} exact />
         <Route path="/contact" component={Contact} exact />
         <Route path="/policy" component={Policy} exact />
-        <Route path="/Home" component={HomeScreen} />
+        <Route path="/Home" component={HomeScreen} exact/>
         <Route path="/" component={Pizza} />
 
         
