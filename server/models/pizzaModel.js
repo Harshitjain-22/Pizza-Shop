@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const pizzaSchema = mongoose.Schema({
     name:{
         type:String,
-        require:true
+        required:true
     },
     varients :[],
     prices:[],
@@ -11,14 +11,18 @@ const pizzaSchema = mongoose.Schema({
         type:String,
         required:true
     },
-    Image:{
-        type:String,
-        required:true
-    },
+    Image : String,
+        
+    
+    // Image:{
+    //     type:String,
+    //     required:true
+    // },
     description:{
         type:String,
         required:true
     },
+    
 },{timestamps:true});
 
 const pizzaModel = mongoose.model('pizza' , pizzaSchema);
