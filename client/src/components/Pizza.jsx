@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Card, Button, Row, Col, Modal ,Container} from "react-bootstrap";
-import AllPizza from "../pizza-data";
+import { Card, Button, Row, Col, Modal} from "react-bootstrap";
+// import pizzas from "../pizza-data";
+// import AllPizza from "../pizza-data";
 
 const Pizza = ({ pizza }) => {
   const [varient, setVarient] = useState("small");
@@ -75,20 +76,6 @@ const Pizza = ({ pizza }) => {
   );
 };
 
-const CreatePizza = () =>{
-  return(
-  <>
-  <Container>
-    <Row>
-        {AllPizza.map((pizza) =>(
-            <Col md={4}>
-                <Pizza
-                pizza={pizza}   
-                />
-            </Col>
-        ))}
-    </Row>
-  </Container>
-</>);
-}
-export default CreatePizza;
+
+  
+export default Pizza;
